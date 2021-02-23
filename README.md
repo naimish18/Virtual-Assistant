@@ -1,6 +1,7 @@
 # Virtual-Assistant
+customizable virtual assistant
 
-Installition:
+#Installition:
 We provided with 2 ways to install the app.
 
 By installing the installer from the releases
@@ -16,3 +17,23 @@ cd Virtual-Assistant # Change your working directory
 pip install -r requirements.txt # Install all the dependencies, might take time depending on your internet speed
 
 python main.py # Run the app
+
+#How to Use:
+
+Click on START button to start the assistant
+
+you can give the NAME and PATH of your file or software to customize Assistant and then you can speak it!!!
+
+you can also add path of your music file to listen or you can copy music file into Music Folder
+
+#How to Run:
+
+After Clicked on Start...
+
+You can say like open google,open youtube, or open name(name is the name of your software or file you added)
+
+You can also say play music to listen songs
+
+You can also say take a picture to take picture
+
+
