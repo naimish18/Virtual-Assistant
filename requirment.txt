@@ -1,0 +1,7 @@
+opencv-python
+wikipedia
+pyttsx3==2.90
+PyAudio-0.2.11-cp39-cp39-win_amd64.whl
+SpeechRecognition
+kivy==2.0.0
+wheel

@@ -1,0 +1,85 @@
+<MyGrid>:
+    name:name
+    path:path
+    musicpath:musicpath
+    FloatLayout:
+        size:root.width,root.height
+        Label:
+            text:"Virtual Assistant"
+            font_size:50
+            pos_hint:{"center_x":.53,"center_y":.8}
+            color:(153/255,255/255,102/255,1)
+            bold:True
+        SmoothButton:
+            text:"START"
+            font_size:30
+            bold:True
+            font_color:(1,1,1,1)
+            size_hint:.25,.3
+            pos_hint:{"center_x":.53,"center_y":.5}
+            back_color:(200/255,153/255,255/255,1)
+            on_press:root.Pressed()
+
+        Label:
+            color:(153/255,255/255,102/255,1)
+            bold:True
+            font_size:20
+            pos_hint:{"center_x":.04,"center_y":.55}
+            text:"Name:"
+        TextInput:
+            size_hint:.3,.05
+            pos_hint:{"center_x":.23,"center_y":.55}
+            id: name
+            multiline:False
+        Label:
+            color:(153/255,255/255,102/255,1)
+            bold:True
+            font_size:20
+            pos_hint:{"center_x":.04,"center_y":.45}
+            text:"Path:"
+        TextInput:
+            size_hint:.3,.05
+            pos_hint:{"center_x":.23,"center_y":.45}
+            id: path
+            multiline:False
+        Button:
+            size_hint:.2,.05
+            pos_hint:{"center_x":.23,"center_y":.35}
+            text:"Submit"
+            background_color:(255/255,153/255,255/255,1)
+            on_press:root.btn()
+            on_press:self.background_color=(102/255,255/255,255/255,1)
+            on_release:self.background_color=(255/255,153/255,255/255,1)
+
+        Label:
+            font_size:20
+            pos_hint:{"center_x":0.84,"center_y":.55}
+            color:(153/255,255/255,102/255,1)
+            bold:True
+            italic:True
+            text:"Add The Path Of Music File"
+        TextInput:
+            size_hint:.3,.05
+            pos_hint:{"center_x":.84,"center_y":.45}
+            id: musicpath
+            multiline:False
+        Button:
+            size_hint:.2,.05
+            pos_hint:{"center_x":.84,"center_y":.35}
+            text:"Add Music"
+            background_color:(255/255,153/255,255/255,1)
+            on_press:root.addMusic()
+            on_press:self.background_color=(102/255,255/255,255/255,1)
+            on_release:self.background_color=(255/255,153/255,255/255,1)
+<SmoothButton@Button>:
+    background_color:(0,0,0,0)
+    background_normal:''
+    back_color:(255/255,153/255,255/255,1)
+    border_radius:[100]
+    canvas.before:
+        Color:
+            rgba:self.back_color
+        RoundedRectangle:
+            size:self.size
+            pos:self.pos
+            radius:self.border_radius
