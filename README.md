@@ -1,6 +1,6 @@
 # Virtual-Assistant
 
-##**Installition**:
+## **Installition**:
 We provided with 2 ways to install the app.
 
 By installing the installer from the releases
