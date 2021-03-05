@@ -19,7 +19,7 @@ python main.py # Run the app
 '''
 
 
-#How to Use:
+**How to Use**:
 
 Click on START button to start the assistant
 
@@ -27,7 +27,7 @@ you can give the NAME and PATH of your file or software to customize Assistant a
 
 you can also add path of your music file to listen or you can copy music file into Music Folder
 
-#How to Run:
+**How to Run**:
 
 After Clicked on Start...
 
